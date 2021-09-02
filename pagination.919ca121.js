@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"vktu":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");const e=document.querySelector(".btn"),t=document.querySelector(".posts");function o(){return fetch("https://pixabay.com/api/?key=23206361-11fddcc9c6397c9794392b9fa&q=yellow+flowers&image_type=photo&per_page=3").then(e=>{if(!e.ok)throw new Error(e.status);return e.json()})}function n(e){const o=e.map(({webformatURL:e})=>`<li>\n          \n  <img src="${e}" alt="" width = "400"/>\n\n        </li>`).join("");t.innerHTML=o}e.addEventListener("click",()=>{o().then(e=>n(e)).catch(e=>console.log(e))}),fetch("https://pixabay.com/api/?key=23206361-11fddcc9c6397c9794392b9fa&q=yellow+flowers&image_type=photo&per_page=3").then(e=>e.json()).then(console.log);
 },{"./sass/main.scss":"clu1"}]},{},["vktu"], null)
-//# sourceMappingURL=/parcel-project-template/pagination.b9bcf08c.js.map
+//# sourceMappingURL=/test/pagination.919ca121.js.map
