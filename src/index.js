@@ -1,10 +1,6 @@
 import './sass/main.scss';
-// import  debounce  from 'lodash.debounce';
-// // import  fetchCountries from './js/fetchCountries';
 import menuMrpTemplate from "./templates/markupCountryCard.hbs"
-// // import { alert, defaultModules } from '../node_modules/@pnotify/core/dist/PNotify.js';
-// // import * as PNotifyMobile from '../node_modules/@pnotify/mobile/dist/PNotifyMobile.js';
- import refs from './js/refs'
+import refs from './js/refs'
  
 // fetch('https://restcountries.eu/rest/v2/name/Russia')
 // .then(response =>{return response.json()})
