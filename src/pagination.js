@@ -22,12 +22,31 @@ function fetchPosts() {
 
 function renderPosts(posts) {
   const markup = posts
-    .map(({ webformatURL }) => {
+    .map(({ webformatURL, likes, views, comments, downloads }) => {
       return `<li>
-          
+          <div class="photo-card">
   <img src="${webformatURL}" alt="" width = "400"/>
 
-        </li>`;
+  <div class="stats">
+    <p class="stats-item">
+      <i class="material-icons">thumb_up</i>
+      ${likes}
+    </p>
+    <p class="stats-item">
+      <i class="material-icons">visibility</i>
+      ${views}
+    </p>
+    <p class="stats-item">
+      <i class="material-icons">comment</i>
+      ${comments}
+    </p>
+    <p class="stats-item">
+      <i class="material-icons">cloud_download</i>
+      ${downloads}
+    </p>
+  </div>
+</div>
+        </li>`
     })
     .join("");
   userList.innerHTML = markup;
